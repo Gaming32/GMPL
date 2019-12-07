@@ -31,7 +31,7 @@ def main():
         pack_path_var.set(path)
     pack_load_box = Entry(pack_load_frame, textvariable=pack_path_var)
     pack_load_dialog_button = Button(pack_load_frame, text='...', command=use_pack_dialog)
-    pack_load_button = Button(pack_load_frame, text='Load pack', command=set_pack_path)
+    pack_load_button = Button(pack_load_frame, text='Load Pack', command=set_pack_path)
     pack_load_box.pack(side=LEFT, expand=YES, fill=X)
     pack_load_dialog_button.pack(side=LEFT)
     pack_load_button.pack(side=RIGHT, fill=X)

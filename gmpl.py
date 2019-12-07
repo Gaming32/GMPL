@@ -183,7 +183,7 @@ class GmplFile:
             info = json.loads(request.urlopen(url).read())
             versions = info['files']
             if version_id is None:
-                version = versions[0]
+                version = info['download']
             else:
                 for check_version in versions:
                     if check_version['id'] == int(version_id):

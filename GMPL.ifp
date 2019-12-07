@@ -1,0 +1,312 @@
+[Header]
+ProjectFileVersion = "1.1"
+[General]
+Program name = GMPL
+Program version = 1.0.0
+Windows 2000 = 0
+Windows XP = 1
+Windows Server 2003 = 0
+Windows Vista = 1
+Windows Server 2008 = 1
+Windows 7 = 1
+Windows 8 = 1
+Windows 10 = 1
+Windows Server 2016 = 1
+DoNotCheckOS = 0
+Company name = Gaming32
+Website = https://github.com/gaming32/gmpl
+SFA = 0
+DFA = 1
+Comp = 1
+[Graphics]
+Wizard image = <main>
+Header image = <main>
+Install-icon image = <main>
+Show Label = 1
+Windows style = 1
+XpStyle = 1
+[Files]
+Include Zipfile = 0
+Zipfile = 
+Installation path = <programfiles>\<company>\<appname>\
+Autcip = 1
+[Uninstall]
+Vwau = 0
+Website = 
+Include uninstaller = 1
+Uninstaller filename = Uninstall
+[Licence]
+Licence dialog = 0
+[Finish]
+Sart program = 0
+Reboot computer = 0
+Execute DLL: = 0
+Program = <installpath>\
+ProgramArguments = 
+Dll = 
+[Shortcuts]
+Allowtc = 1
+Shortcut path = <company>\<appname>
+[Serialoptions]
+Allows = 0
+Number = 20
+[SplashScreen]
+Image = 
+Sound = 
+Time = 2
+PlaySound = 0
+Allow = 0
+[Build]
+File = 
+[Updater]
+Allow = 0
+1 = <appname>
+2 = <appversion>
+3 = http://
+4 = http://
+5 = http://
+6 = Update
+Language = 0
+RunProg = 
+RunProgs = 0
+Execdlls = 0
+[Languages]
+[Files/Dirs]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_bz2.pyd
+87.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_cffi_backend.cp37-win_amd64.pyd
+167 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_contextvars.pyd
+22.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_ctypes.pyd
+129.6 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_decimal.pyd
+261.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_distutils_findvs.pyd
+24.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_elementtree.pyd
+204.6 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_hashlib.pyd
+38.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_lzma.pyd
+251.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_multiprocessing.pyd
+28.6 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_queue.pyd
+27.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_socket.pyd
+74.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_ssl.pyd
+120.6 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_tkinter.pyd
+65.6 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\_win32sysloader.pyd
+12 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\base_library.zip
+766.5 KB
+zip
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\gmpl_gui.exe
+5.2 MB
+exe
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\gmpl_gui.exe.manifest
+1 KB
+manifest
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\lib_arpack-.EMGWSWUBUHUJILB4NPEQ2VDXMICPYM6L.gfortran-win_amd64.dll
+1.7 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\lib_blas_su.LRPINSRKJLXUDKSHQKTVYXTTJYMQC76J.gfortran-win_amd64.dll
+146.9 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\lib_test_fo.JF5HTWMUPBXWGAYEBVEJU3OZAHTSVKCT.gfortran-win_amd64.dll
+601.8 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libansari.R6EA3HQP5KZ6TAXU4Y4ZVTRPT7UVA53Z.gfortran-win_amd64.dll
+135.2 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libbanded5x.5JFZLYIFGBG5YLEL2LR4RAMYY6BOQYQE.gfortran-win_amd64.dll
+781.4 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libbispeu.5N2XSD7URZS4WTOSLTOG4DDMA4HGB46U.gfortran-win_amd64.dll
+1.9 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libblkdta00.6P2J2T7LKPXBCYALM6IO5BO2ZJPS4VID.gfortran-win_amd64.dll
+771.6 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libchkder.G7WSOGIYYQO3UWFVEZ3PPXCXR53ADVPA.gfortran-win_amd64.dll
+287.1 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libcobyla2.JEGTSUUFJ7DFXWZN5PAYZTTLBDATC4WD.gfortran-win_amd64.dll
+751.9 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libcrypto-1_1-x64.dll
+2.4 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libd_odr.FKX7CCOHQWDDNSJXDP7SFRFLDWMVB6FP.gfortran-win_amd64.dll
+1.2 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdcosqb.BFJ36UD5XZWZE5UMOTP5UDYKAJ3LWZ6R.gfortran-win_amd64.dll
+462.4 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdcosqb.YMN7XEXYADIEZSKAGEVNR4E3MD7AXDG2.gfortran-win_amd64.dll
+982.8 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdcsrch.I2AOPDCXAPDRFNPWY55H5UE7XZSU5CVN.gfortran-win_amd64.dll
+68.6 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdet.R54MJFKBJDO4AILI3ONUWTWPX7P7KFAX.gfortran-win_amd64.dll
+86.5 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdfft_sub.IK2EUVHZJ7DOPJBHFGDKW65L4UT23MQT.gfortran-win_amd64.dll
+1.5 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdfitpack.PJU6IBGOYZCWITNVROHYOQAYNGAXO3HT.gfortran-win_amd64.dll
+1.9 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdgamln.54XR34AK2Q4XKSPJNCCF22ORL5OLAJR5.gfortran-win_amd64.dll
+2.6 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdop853.6TJTQZW3I3Q3QIDQHEOBEZKJ3NYRXI4B.gfortran-win_amd64.dll
+723.5 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libdqag.PVLCWMXKY35VNUTARCCVGIKKL6EEQDTU.gfortran-win_amd64.dll
+905.8 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libgetbreak.YEQLL7NLWUMNVED6HJOLAXD6KKWFWMOG.gfortran-win_amd64.dll
+363.3 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\liblbfgsb.T7CMCRHAKZL4U5F2VKTRRSC33DDWZZKA.gfortran-win_amd64.dll
+794.2 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libmvndst.5VXNIPAPINAF5NIHXAFNA4OTHOPNDEWG.gfortran-win_amd64.dll
+162.9 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libnnls.IXEEHJUCGHJL42YZEM6UIEMROJWXHMLJ.gfortran-win_amd64.dll
+623.4 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libopenblas.IPBC74C7KURV7CB2PKT5Z5FNR3SIBV4J.gfortran-win_amd64.dll
+31.6 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libopenblas.TXA6YQSD3GCQQC22GEQ54J2UDCXDXHWN.gfortran-win_amd64.dll
+31.6 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libslsqp_op.LIFGE6AEK5GZMIV4YAH6Q4UEDG4INU5S.gfortran-win_amd64.dll
+247 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libspecfun.BHLTWMBI4EYWDACZN4DQUESSDJRJNGEL.gfortran-win_amd64.dll
+1.3 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libssl-1_1-x64.dll
+514.2 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libvode.WNXUJA7OJQOHH5OAZ3G7RKXWV3H67NDL.gfortran-win_amd64.dll
+993.2 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libwrap_dum.EUX7V2JUDFCO7XBBMDQWGJURNNBF5KQX.gfortran-win_amd64.dll
+169.2 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\libwrap_dum.TLJ5XGIAVEJRTNYILZQ64YACOUQVAJUT.gfortran-win_amd64.dll
+65.8 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\mfc140u.dll
+5.4 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\pyexpat.pyd
+195.6 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\python37.dll
+3.6 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\pythoncom37.dll
+541 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\pywintypes37.dll
+135 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\select.pyd
+26.1 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\tcl86t.dll
+1.7 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\tk86t.dll
+1.4 MB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\unicodedata.pyd
+1 MB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\VCRUNTIME140.dll
+87.6 KB
+dll
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\win32api.pyd
+129 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\win32pdh.pyd
+32.5 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\win32trace.pyd
+22 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\win32ui.pyd
+1.4 MB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\win32wnet.pyd
+35 KB
+pyd
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\Include\
+n/a
+[Folder]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\lib2to3\
+n/a
+[Folder]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\numpy\
+n/a
+[Folder]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\PIL\
+n/a
+[Folder]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\scipy\
+n/a
+[Folder]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\tcl\
+n/a
+[Folder]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\tk\
+n/a
+[Folder]
+C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\win32com\
+n/a
+[Folder]
+[Licence_Begin]
+128
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}}
+\viewkind4\uc1\pard\cf0\f0\fs17\par
+}
+ [Licence_End]
+[Registry]
+[Variables]
+[SCs]
+Startmenu
+GMPL
+<installpath>\
+
+
+0
+[IFP_End]
+[Serials]
+[Serials_End]
+[Commands]
