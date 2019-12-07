@@ -1,4 +1,4 @@
 *.jar
-morecraft
-test
+morecraft/
+test/
 morecraft.gmpl
