@@ -12,7 +12,7 @@ Windows 7 = 1
 Windows 8 = 1
 Windows 10 = 1
 Windows Server 2016 = 1
-DoNotCheckOS = 0
+DoNotCheckOS = 1
 Company name = Gaming32
 Website = https://github.com/gaming32/gmpl
 SFA = 0
@@ -57,7 +57,7 @@ Time = 2
 PlaySound = 0
 Allow = 0
 [Build]
-File = 
+File = C:\Users\josia\MEGA\Projects\Minecraft\GMPL\GMPL-installer-win.exe
 [Updater]
 Allow = 0
 1 = <appname>
@@ -292,17 +292,23 @@ C:\Users\josia\MEGA\Projects\Minecraft\GMPL\dist\gmpl_gui\win32com\
 n/a
 [Folder]
 [Licence_Begin]
-128
+124
 {\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}}
-\viewkind4\uc1\pard\cf0\f0\fs17\par
+\viewkind4\uc1\pard\f0\fs17\par
 }
  [Licence_End]
 [Registry]
 [Variables]
 [SCs]
 Startmenu
+Great Mod-Pack Launcher
+<installpath>\gmpl_gui.exe
+
+
+0
+Desktop
 GMPL
-<installpath>\
+<installpath>\gmpl_gui.exe
 
 
 0

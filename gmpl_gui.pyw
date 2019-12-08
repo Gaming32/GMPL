@@ -2,6 +2,7 @@ import sys
 from tk_html_widgets import HTMLLabel
 from tkinter import *
 from tkinter.filedialog import askopenfilename, askdirectory
+from tkinter.messagebox import showerror, showinfo
 from gmpl import *
 
 if sys.platform == 'win32':
@@ -27,7 +28,8 @@ def main():
         pack = GmplFile(pack_path)
         info_render.set_html(pack.pretty_html())
     def use_pack_dialog():
-        path = askopenfilename()
+        path = askopenfilename(defaultextension='.gmpl',
+            filetypes=[('Mod pack files', '*.gmpl'), ('All files', '*')], title='Choose pack file')
         pack_path_var.set(path)
     pack_load_box = Entry(pack_load_frame, textvariable=pack_path_var)
     pack_load_dialog_button = Button(pack_load_frame, text='...', command=use_pack_dialog)
@@ -48,16 +50,28 @@ def main():
     def set_inject_path():
         nonlocal inject_path
         inject_path = inject_path_var.get()
-        pack.inject(inject_path)
+        def set_label_text(text):
+            inject_label['text'] = text
+            if text == 'Done': showinfo('Done', 'Done')
+        try: pack.inject_threaded(inject_path, set_label_text)
+        except AttributeError:
+            set_label_text('Error')
+            showerror('error: AttributeError', 'No modpack loaded!')
+        except Exception as exc:
+            set_label_text('Error')
+            showerror('error: %s'%exc.__class__.__name__, str(exc))
+            raise
     def use_inject_dialog():
-        path = askdirectory()
+        path = askdirectory(title='Choose inject directory')
         inject_path_var.set(path)
     inject_box = Entry(inject_frame, textvariable=inject_path_var)
     inject_dialog_button = Button(inject_frame, text='...', command=use_inject_dialog)
     inject_button = Button(inject_frame, text='Inject', command=set_inject_path)
+    inject_label = Label(root, text='Idle')
     inject_box.pack(side=LEFT, expand=YES, fill=X)
     inject_dialog_button.pack(side=LEFT)
     inject_button.pack(side=RIGHT, fill=X)
+    inject_label.pack(side=BOTTOM, fill=X)
     inject_frame.pack(side=BOTTOM, fill=X)
     #endregion
 

@@ -17,7 +17,7 @@ def main():
     parser.add_argument('--cdn-resources-specific', '-S', dest='specific_resources', action='append', nargs=2, default=[])
 
     args = parser.parse_args()
-    print(args)
+    # print(args)
     create_gmpl_file(args.mod_file, args.mod_cdn+args.specific_mod, args.dest_file,
         json.load(open(args.info_file)), args.resources_file, args.resources_cdn+args.specific_resources)
 

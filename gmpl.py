@@ -1,37 +1,11 @@
 import os
-import zipfile, json, markdown, json
-from urllib.parse import urlsplit
+import zipfile, json, markdown, _thread
 from urllib import request
-from http import cookiejar
-
-def url2name(url):
-    return os.path.basename(urlsplit(url)[2])
-
-# def download(url, out_path):
-#     print(url)
-#     # req = request.Request(url)
-#     # r = request.urlopen(req)
-#     mycookiejar = cookiejar.LWPCookieJar()
-#     opener = request.build_opener(request.HTTPCookieProcessor(mycookiejar))
-#     r = opener.open(url)
-#     if r.info().has_key('Content-Disposition'):
-#         # If the response has Content-Disposition, we take file name from it
-#         localName = r.info()['Content-Disposition'].split('filename=')[1]
-#         if localName[0] == '"' or localName[0] == "'":
-#             localName = localName[1:-1]
-#     elif r.url != url: 
-#         # if we were redirected, the real file name we take from the final URL
-#         localName = url2name(r.url)
-
-#     localName = os.path.join(out_path, localName)
-#     f = open(localName, 'wb')
-#     f.write(r.read())
-#     f.close()
 
 info_template = {
     'name': 'modpack',
     'site': None,
-    'description': None,
+    'description': '',
     'author': {
         'name': 'person',
         'site': None
@@ -46,9 +20,12 @@ def create_gmpl_file(mod_paths=[], mod_ids=[], dest_file='modpack.gmpl',
     info = info.copy()
 
     for path in mod_paths:
+        print(path)
         file.write(path, 'mods/%s' % os.path.basename(path))
     download_mods = file.open('downloads', 'w')
     for mod_id in mod_ids:
+        print(mod_id)
+        mod_id = tuple(mod_id)
         if len(mod_id) > 1:
             download_mods.write(
                 ('https://api.cfwidget.com/mc-mods/minecraft/%s|%s\n' % mod_id).encode())
@@ -58,9 +35,12 @@ def create_gmpl_file(mod_paths=[], mod_ids=[], dest_file='modpack.gmpl',
     download_mods.close()
 
     for path in resources_paths:
+        print(path)
         file.write(path, 'resourcepacks/%s' % os.path.basename(path))
     download_resources = file.open('download_resourcepacks', 'w')
     for resource_id in resources_ids:
+        print(resource_id)
+        resource_id = tuple(resource_id)
         if len(resource_id) > 1:
             download_resources.write(
                 ('https://api.cfwidget.com/texture-packs/minecraft/%s|%s\n' % resource_id).encode())
@@ -161,19 +141,6 @@ class GmplFile:
         self._extract('resourcepacks', dest)
 
     def _download(self, src, dest1, dest2):
-        # br = mechanize.Browser()
-        # cj = cookiejar.LWPCookieJar()
-        # br.set_cookiejar(cj)
-        # br.set_handle_robots(False)
-        # br.set_handle_redirect(True)
-        # br.set_handle_equiv(True)
-        # br.addheaders = list({
-        #     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
-        #     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        #     'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-        #     'Accept-Encoding': 'none',
-        #     'Accept-Language': 'en-US,en;q=0.8',
-        #     'Connection': 'keep-alive'}.items())
         dest = os.path.join(dest1, dest2)
         for url in self.zip.open(src):
             url = url.decode().strip()
@@ -202,3 +169,16 @@ class GmplFile:
         self.download_mods(dest)
         self.extract_resourcepacks(dest)
         self.download_resourcepacks(dest)
+
+    def _inject_threaded(self, dest, prog_cb):
+        prog_cb('Extracting mods...')
+        self.extract_mods(dest)
+        prog_cb('Downloading mods...')
+        self.download_mods(dest)
+        prog_cb('Extracting resource packs...')
+        self.extract_resourcepacks(dest)
+        prog_cb('Downloading resource packs...')
+        self.download_resourcepacks(dest)
+        prog_cb('Done')
+    def inject_threaded(self, dest, prog_cb=(lambda x: None)):
+        _thread.start_new_thread(self._inject_threaded, (dest, prog_cb))
