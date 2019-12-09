@@ -35,3 +35,4 @@ Here is a template:
     }
 }
 ```
+If you don't wish to have a description, leave it blank, don't set it to `null`. However, the sites can be either `null` or `""`. All fields must be included.
