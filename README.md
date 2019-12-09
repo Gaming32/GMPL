@@ -5,11 +5,13 @@ The GMPL maker is a command-line utility used to make mod-packs compatable with 
 ## Arguments
 ### Positional
 The GMPL maker takes the following positional arguments:
+
 | Name               | Description |
 | ------------------ | ----------- |
 | `OUTPUT_FILE` | The path to the modpack file to be saved. |
 ### Flags
 The GMPL maker takes the following flag arguments:
+
 | Flag               | Description | Aliases |
 | ------------------ | ------------| ------- |
 | `--info-file INFO_FILE` | A path to an info file to be used as the modpack's info file. See [Info Files](#info-files) below | `-I INFO_FILE` |
@@ -19,7 +21,7 @@ The GMPL maker takes the following flag arguments:
 | `--resources-file RESOURCES_FILE` | A path to a resource pack zip stored on the local device. This argument may be passed many times. | `-r RESOURCES_FILE` |
 | `--cdn-resources RESOURCES_CDN` | A resource pack zip to be downloaded from forgecdn. This is passed as a project id to be sent to the [cfwidget](https://www.cfwidget.com/) API. This argument may be passed many times. | `-C RESOURCES_CDN` |
 | `--cdn-resources-specific SPECIFIC_RESOURCES SPECIFIC_RESOURCES` | A resource pack zip to be downloaded from forgecdn. This is passed as a project id and a file id to be sent to the [cfwidget](https://www.cfwidget.com/) API. This argument may be passed many times. | `-s SPECIFIC_RESOURCES SPECIFIC_RESOURCES` |
-## Info files {#info-files}
+## <p id="info-files">Info files</p>
 Info files are json files passed to the maker to be used as the modpack's information.
 Here is a template:
 ``` json
